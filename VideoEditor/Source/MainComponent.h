@@ -99,7 +99,7 @@ private:
     Viewport              viewport;
     TimeLine              timeline   { videoEngine, player, properties };
     TransportControl      transport  { player };
-    foleys::LevelMeter    levelMeter { std::make_unique<foleys::VerticalMultiChannelMeter>() };
+    FFAU::LevelMeter    levelMeter;// { std::make_unique<foleys::VerticalMultiChannelMeter>() };
 
     File editFileName;
     int  lowerPart = 0;

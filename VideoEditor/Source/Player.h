@@ -53,7 +53,7 @@ public:
     void stopAudition();
     bool isAuditioning() const;
 
-    foleys::LevelMeterSource& getMeterSource();
+    FFAU::LevelMeterSource& getMeterSource();
 
     void initialise();
     void shutDown();
@@ -89,7 +89,7 @@ public:
             }
         }
 
-        foleys::LevelMeterSource meterSource;
+        FFAU::LevelMeterSource meterSource;
 
     private:
         const bool clipOutput = true;

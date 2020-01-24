@@ -180,7 +180,7 @@ void Player::changeListenerCallback (ChangeBroadcaster* sender)
     }
 }
 
-foleys::LevelMeterSource& Player::getMeterSource()
+FFAU::LevelMeterSource& Player::getMeterSource()
 {
     return transportSource.meterSource;
 }
